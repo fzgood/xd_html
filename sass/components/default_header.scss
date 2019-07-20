@@ -1,0 +1,35 @@
+.header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 126px;
+    z-index: 99;
+    background-color:#181818;
+    &-box{
+        height: 126px;
+    }
+    &-nav{
+        &__item{
+            &--text{
+                display: block;
+                padding:10px;
+                color:#fff;
+                font-family: Proxima Nova;
+                font-size: 17px;
+            }
+            &--text:hover{
+                color:$mainColor;
+            }
+        }
+        &__item--active{
+            text{
+                color:$mainColor;
+            }    
+        }
+    }
+    &-search{
+        margin-left:20px;
+        color:#fff;
+    }
+}
