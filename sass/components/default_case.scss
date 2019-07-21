@@ -1,0 +1,16 @@
+.case-item{
+    margin-bottom:30px;
+    position: relative;
+    &__href{
+        display: block;
+    }
+    &__title{
+        position: absolute;
+        bottom:0;
+        left:0; 
+        padding:32px 50px;           
+        width:100%;
+        color:#fff;
+        font-size: 35px;
+    }
+}
