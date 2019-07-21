@@ -1,0 +1,57 @@
+.page-contact{
+    font-family: 'Proxima Nova';
+    &__left{
+        font-size: 15px;
+        line-height: 28px;
+        &--address{
+            margin-bottom:15px;
+            padding:0 15px 15px;
+            color:$mainColor;
+            border-bottom: 1px solid #c9caca;
+        }
+        &--text{
+            padding: 0 15px;
+        }
+    }
+    &__form{
+        &--item{
+            margin-bottom:40px;
+            &-name{
+                color:$mainColor;
+                font-size: 18px;
+            }
+            &-input{
+                margin-top:15px;
+                input, select, textarea{
+                    min-height: 40px;
+                    padding:10px;
+                    border:none;
+                    outline: none;
+                    width:100%;
+                    background-color:#efefef;
+                }
+                textarea{
+                    resize: none;
+                    min-height: 180px;
+                }
+            }
+        }
+        &--item:last-child{
+            margin-bottom:0;
+        }
+        &--ft{
+            button{
+                padding:12px 20px;
+                color:#727171;
+                background-color:#efefef;
+                border:none;
+                outline:none;
+            }
+            p{
+                margin-top:30px;
+                color:#727171;
+                font-size: 18px;
+            }
+        }
+    }
+}

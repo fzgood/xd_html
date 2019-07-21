@@ -329,6 +329,48 @@
   line-height: 40px;
   margin-bottom: 40px; }
 
+.page-contact {
+  font-family: 'Proxima Nova'; }
+  .page-contact__left {
+    font-size: 15px;
+    line-height: 28px; }
+    .page-contact__left--address {
+      margin-bottom: 15px;
+      padding: 0 15px 15px;
+      color: #ea5520;
+      border-bottom: 1px solid #c9caca; }
+    .page-contact__left--text {
+      padding: 0 15px; }
+  .page-contact__form--item {
+    margin-bottom: 40px; }
+    .page-contact__form--item-name {
+      color: #ea5520;
+      font-size: 18px; }
+    .page-contact__form--item-input {
+      margin-top: 15px; }
+      .page-contact__form--item-input input, .page-contact__form--item-input select, .page-contact__form--item-input textarea {
+        min-height: 40px;
+        padding: 10px;
+        border: none;
+        outline: none;
+        width: 100%;
+        background-color: #efefef; }
+      .page-contact__form--item-input textarea {
+        resize: none;
+        min-height: 180px; }
+  .page-contact__form--item:last-child {
+    margin-bottom: 0; }
+  .page-contact__form--ft button {
+    padding: 12px 20px;
+    color: #727171;
+    background-color: #efefef;
+    border: none;
+    outline: none; }
+  .page-contact__form--ft p {
+    margin-top: 30px;
+    color: #727171;
+    font-size: 18px; }
+
 body {
   color: #000;
   font-family: 'Proxima Nova'; }
