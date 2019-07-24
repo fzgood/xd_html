@@ -35,7 +35,51 @@
     &-item--black{
         color:#fff;
         background-color:#3c3d3d;
-      
+    }
+
+}
+.detail{
+    font-family: 'Proxima Nova';
+    &-hd{
+        margin-top:$boxDistance;
+        padding:40px 0;
+        color:$mainColor;
+        font-size: 22px;
+        background-color:#e5e5e5;
+    }
+    &-title{
+        color:$mainColor;
+        font-family: 'Adobe 黑体 Std';
+        font-size: 22px;
+    }
+    &-date{
+        margin-top:30px;
+        color:$mainColor;
+        font-size:16px;
+        line-height: 30px;
+        font-family: 'Adobe 黑体 Std';
+    }
+    &-content{
+        color:#898989;
+        font-size:16px;
+        line-height: 30px;
+        font-family: 'Adobe 黑体 Std';
+        p{
+            margin-top:60px;
+        }
+    }
+    &-more{
+        margin-top:$boxDistance;
+        text-align: center;
+        a{
+            margin:0 auto;
+            display: block;
+            width:18px;
+            height:18px;
+            border-top:4px solid $mainColor;
+            border-right:4px solid $mainColor;
+            transform: rotate(-45deg);
+        }
     }
 }
 .page-news{
