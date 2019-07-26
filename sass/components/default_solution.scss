@@ -218,4 +218,83 @@
             background-color:#cdcdcd;
         }
     }
+    .page-smart2{
+        font-family: 'Proxima Nova';
+        &__section{
+            &--title{
+                color:$mainColor;
+                font-size: 50px;
+            }
+            &--content{
+                margin-top:$boxDistance;
+                p{
+                    margin-bottom:60px;
+                    color:#3c3d3d;
+                    font-size: 20px;
+                    line-height: 40px;
+                }
+                p:last-child{
+                    margin-bottom:0px;
+                }
+            }
+        }
+        &__guide{
+            &--item{
+                &-box{
+                    height: 75px;
+                    line-height: 75px;
+                }
+                &-content{
+                    margin-top:30px;
+                    color:$mainColor;
+                    font-size: 22px;
+                }
+            }
+            &--xs{
+                position: relative;
+                height: 140px;
+                &::before,&::after, span{
+                    content:'';
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    transform:translate(-50%,-50%);
+                    width:2px;
+                    height:2px;
+                    background-color:#f5dabb;
+                }
+                &::before{
+                    width:65px;
+                }
+                &::after{
+                    height:65px;
+                }
+                span{
+                    width:15px;
+                    height: 15px;
+                    background-color:#fff;
+                    z-index: 2;
+                }
+            }
+        }
+        &__photo{
+            margin:0 -5px;
+            overflow: hidden;
+            &--item{
+                margin-bottom:10px;
+                float: left;
+                padding:0 5px;
+                width:100%;
+                img{
+                    width:100%;
+                }
+            }
+            .smailPhoto{
+                width: 36.2%;
+            }
+            .bigPhoto{
+                width:63.8%;
+            }
+        }
+    }
 }
