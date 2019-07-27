@@ -213,6 +213,7 @@
             background-image: url('../images/secure-bg1.png');
             background-repeat:no-repeat;
             background-position: right center;
+            background-size: cover;
         }
         &__section:nth-child(odd){
             background-color:#cdcdcd;
@@ -243,11 +244,21 @@
                 &-box{
                     height: 75px;
                     line-height: 75px;
+                    img{
+                        max-height: 100%;
+                    }
                 }
                 &-content{
                     margin-top:30px;
                     color:$mainColor;
                     font-size: 22px;
+                }
+            }
+            .inline-block{
+                padding:0 50px;
+                .page-smart2__guide--item-content{
+                    color:#332c2b;
+                    font-size: 14px;
                 }
             }
             &--xs{
@@ -292,8 +303,28 @@
             .smailPhoto{
                 width: 36.2%;
             }
+            .mediumPhoto{
+                width:50%;
+            }
             .bigPhoto{
                 width:63.8%;
+            }
+        }
+    }
+    .page-election2{
+        &__photo{
+            overflow: hidden;
+            &--left{
+                margin-right:10px;
+                .photo-item{
+                    width: 389px;
+                }
+            }
+            &--right{
+                .photo-item:first-child{
+                    margin-right: 10px;
+                    width: 324px;
+                }
             }
         }
     }

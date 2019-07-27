@@ -75,3 +75,51 @@ a:hover,a:active{
 	font-size: 20px;
 	line-height: 40px;
 }
+.inline-block{
+	display: inline-block;
+}
+
+.text-white{
+	color:#fff;
+}
+.text-gray{
+	color:#65696e
+}
+.text-mainColor{
+	color:$mainColor;
+}
+
+.photo{
+	&-item{
+		&__box{
+			position: relative;
+			margin-bottom:10px;
+		}
+		img{
+			width:100%;
+		}
+		&__content{
+			font-size: 30px;
+		}
+		.top-left{
+			position: absolute;
+			top:30px;
+			left:30px;
+		}
+		.top-right{
+			position: absolute;
+			top:30px;
+			right:30px;
+		}
+		.bottom-left{
+			position: absolute;
+			bottom:30px;
+			right:30px;
+		}
+		.bottom-right{
+			position: absolute;
+			bottom:30px;
+			right:30px;
+		}
+	}
+}
