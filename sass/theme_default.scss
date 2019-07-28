@@ -2,6 +2,7 @@ $mainColor: #ea5520;
 $boxDistance: 96px;
 @import "./components/mixin.scss";
 @import "./components/default_flex.scss";
+@import "./components/default_mobile.scss";
 @import "./components/default_header.scss";
 @import "./components/default_footer.scss";
 @import "./components/default_index.scss";
@@ -45,6 +46,11 @@ a:hover,a:active{
 	.page-box{
 		padding:30px 0;
 	}
+}
+.text-wrap{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .margin-reset{
 	margin:0 !important;
@@ -97,6 +103,23 @@ a:hover,a:active{
 	font-size: 20px;
 	line-height: 40px;
 }
+
+
+@include sm {
+	.section-title{
+		font-size: 24px;
+		line-height: 1.4;
+	}
+	.section-photo{
+		margin-top:20px;
+	}
+	.section-content{
+		margin-top:20px;
+		font-size: 18px;
+		line-height: 1.4;
+	}
+}
+
 .inline-block{
 	display: inline-block;
 }

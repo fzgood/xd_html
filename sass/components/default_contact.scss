@@ -54,4 +54,28 @@
             }
         }
     }
+    &__moblie--address{
+        display: none;
+    }
+}
+
+@include md{
+    .page-contact{
+        &__left{
+            display: none;
+        }
+        &__form{
+            &--item{
+                margin-bottom:20px;
+            }
+        }
+        &__moblie--address{
+            display: block;
+            padding-top:15px;
+            font-size: 18px;
+            color:$mainColor;
+            line-height: 1.4;
+            border-top:1px solid #c9caca;
+        }
+    }
 }

@@ -86,6 +86,11 @@
     .news-box{
         padding:$boxDistance 0;
         background-color:#f6f6f6;
+        &__wrap{
+            &>div:nth-child(n+3){
+                display: none;
+            }
+        }
     }
     &__title{
         height:$boxDistance;
@@ -95,14 +100,47 @@
         background-color:#e5e5e5;
     }
 }
-.page-news:first-child{
-    margin-top:$boxDistance;
-}
 
 @include md {
     .news{
         &-item{
             margin-bottom:15px;
+            &__box{
+                padding:15px;
+            }
+            &__title{
+                font-size: 16px;
+                line-height: 1.4;
+            }
+        }
+    }
+    .page-news{
+        .news-box{
+            padding:30px 0;
+            background-color:#f6f6f6;
+        }
+        &__title{
+            height:46px;
+            line-height:46px;
+        }
+    }
+    .detail{
+        &-hd{
+           
+        }
+        &-title{
+        }
+        &-date{
+           margin-top:15px;
+        }
+        &-content{
+            P{
+                margin-top:15px;
+                color:#565656;
+            }
+        }
+        &-more{
+           margin-top:30px;
         }
     }
 }

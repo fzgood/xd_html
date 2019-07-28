@@ -57,9 +57,9 @@
                     &::before{
                         content:'';
                         position: absolute;
-                        top:50%;
-                        left:0;
-                        transform: translate(-20px, -50%);
+                        top: 0;
+                        left: 0;
+                        transform: translate(-20px, 10px);
                         width:8px;
                         height: 8px;
                         background-color:$mainColor;
@@ -105,5 +105,59 @@
         color:#898989;
         font-size: 20px;
         line-height: 40px;
+    }
+}
+
+@include sm{
+    .page-about{
+        &__content{
+            p{
+                color:#898989;
+                line-height: 1.4;
+                font-size: 16px;
+                margin-bottom:20px;
+            }
+        }
+    }
+    .process{
+        &-section{
+            margin-top:30px;
+            padding-left:25px;
+            &__item{
+                padding-top:0;
+                padding-bottom:30px;
+                &--hd{
+                    &::after{
+                        transform: translate(-31px, -50%);
+                    }
+                }
+                &--bd{
+                    padding-left:30px;
+                }
+                &--date{
+                    font-size: 24px;
+                }
+                &--intro{
+                    font-size: 16px;
+                }
+            }
+        }
+
+    }
+    .cooperation{
+        &-photo{
+            margin-right: -5px;
+            &__item{
+                margin-bottom:5px;
+                padding-right: 5px;
+                float:left;
+                width:50%;
+            }
+        }
+        &-content{
+            margin-top:30px;
+            font-size: 16px;
+            line-height: 1.4;
+        }
     }
 }
