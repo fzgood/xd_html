@@ -72,3 +72,18 @@
     height:126px;
     background-color:#000;
 }
+
+@include md {
+	.header,
+	.header-zw{
+        display: none;
+    }
+}
+
+// .banner{
+//     height: 830px;
+//     overflow: hidden;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+// }

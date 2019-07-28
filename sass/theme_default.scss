@@ -1,5 +1,6 @@
 $mainColor: #ea5520;
 $boxDistance: 96px;
+@import "./components/mixin.scss";
 @import "./components/default_flex.scss";
 @import "./components/default_header.scss";
 @import "./components/default_footer.scss";
@@ -28,7 +29,22 @@ a:hover,a:active{
 	object-fit: cover;
 }
 .page-box{
-	padding:$boxDistance;
+	padding:$boxDistance 0;
+}
+@include md {
+	.page-box{
+		padding:60px 0;
+	}
+}
+@include sm {
+	.page-box{
+		padding:30px 0;
+	}
+}
+@include xs {
+	.page-box{
+		padding:30px 0;
+	}
 }
 .margin-reset{
 	margin:0 !important;
@@ -59,6 +75,12 @@ a:hover,a:active{
 }
 .padding-right-reset{
 	padding-right:0 !important;
+}
+.padding-left5{
+	padding-left: 5px;
+}
+.padding-right5{
+	padding-left: 5px;
 }
 
 .section-title{
@@ -114,12 +136,38 @@ a:hover,a:active{
 		.bottom-left{
 			position: absolute;
 			bottom:30px;
-			right:30px;
+			left:30px;
 		}
 		.bottom-right{
 			position: absolute;
 			bottom:30px;
 			right:30px;
+		}
+	}
+}
+
+@include sm {
+	.photo{
+		&-item{
+			&__content{
+				font-size: 18px;
+			}
+			.top-left{
+				top:15px;
+				left:15px;
+			}
+			.top-right{
+				top:15px;
+				right:15px;
+			}
+			.bottom-left{
+				bottom:15px;
+				left:15px;
+			}
+			.bottom-right{
+				bottom:15px;
+				right:15px;
+			}
 		}
 	}
 }
