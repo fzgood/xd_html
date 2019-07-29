@@ -14,4 +14,17 @@ $(document).ready(function(){
         $parent.children('.level2-nav').stop().slideToggle();
         return false;
     });
+
+    var isPhone = (function(){
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    })()
+
+    if(isPhone){
+        var $footerNavItem = $('.footer-category__item');
+        $footerNavItem.on('click', function(){
+            var $this = $(this);
+            $this.children('.footer-category__item--ul').slideToggle();
+        });
+    }
+    
 })

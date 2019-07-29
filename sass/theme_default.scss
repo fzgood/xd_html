@@ -133,6 +133,9 @@ a:hover,a:active{
 .text-mainColor{
 	color:$mainColor;
 }
+.text-darkBlue{
+	color:#185369;
+}
 
 .photo{
 	&-item{
@@ -190,6 +193,16 @@ a:hover,a:active{
 			.bottom-right{
 				bottom:15px;
 				right:15px;
+			}
+		}
+	}
+}
+
+@include xs {
+	.photo{
+		&-item{
+			&__content{
+				font-size: 14px;
 			}
 		}
 	}

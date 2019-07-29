@@ -1,4 +1,5 @@
 .mobile-hd{
+    display: none;
     position: fixed;
     top:0;
     left:0;
@@ -51,10 +52,12 @@
 }
 
 .mobile-hd__zw{
+    display: none;
     height: 50px;
 }
 
 .mobile-nav{
+    display: none;
     position: fixed;
     top:0;
     left:0;
@@ -119,5 +122,14 @@
         .level2-nav{
             display: block;
         }
+    }
+}
+
+@include md{
+    .mobile-nav,.mobile-hd__zw{
+        display: block;
+    }
+    .mobile-hd{
+        display:flex;
     }
 }
