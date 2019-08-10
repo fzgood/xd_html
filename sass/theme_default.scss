@@ -1,5 +1,5 @@
 $mainColor: #ea5520;
-$boxDistance: 96px;
+$boxDistance: 40px;
 @import "./components/mixin.scss";
 @import "./components/default_flex.scss";
 @import "./components/default_mobile.scss";
@@ -34,7 +34,7 @@ a:hover,a:active{
 }
 @include md {
 	.page-box{
-		padding:60px 0;
+		padding:40px 0;
 	}
 }
 @include sm {
@@ -102,6 +102,19 @@ a:hover,a:active{
 	color:#332c2b;
 	font-size: 20px;
 	line-height: 40px;
+}
+
+
+.my-show{
+    opacity: 1;
+    visibility: unset;
+    transition: all 0.5s ease;
+}
+
+.my-hide{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
 }
 
 

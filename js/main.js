@@ -27,4 +27,23 @@ $(document).ready(function(){
         });
     }
     
+
+    var $headerNav = $('.header-nav');
+    var $search = $('.search');
+    var $searchBtn = $('.header-search');
+
+    $searchBtn.on('click', function(){
+        var $this = $(this);
+        $this.removeClass('my-show').addClass('my-hide');
+        $headerNav.removeClass('my-show').addClass('my-hide');
+        $search.removeClass('my-hide').addClass('my-show');
+    })
+
+    $('.search-close').on('click', function(){
+        $searchBtn.removeClass('my-hide').addClass('my-show');
+        $headerNav.removeClass('my-hide').addClass('my-show');
+        $search.removeClass('my-show').addClass('my-hide');
+    });
+
+
 })
