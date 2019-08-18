@@ -45,5 +45,16 @@ $(document).ready(function(){
         $search.removeClass('my-show').addClass('my-hide');
     });
 
+    $('.owl-carousel').owlCarousel({
+        responsive:{
+            0:{
+                items:1
+            }
+        }
+    })
+
+    new WOW({
+        mobile: false
+    }).init();
 
 })

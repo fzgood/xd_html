@@ -1,5 +1,9 @@
+body{
+    padding-top:72px;
+}
 .header{
-    // position: absolute;
+    position: fixed;
+    font-family: ProximaNova,Arial,Sans-serif;
     top:0;
     left:0;
     width: 100%;
@@ -21,14 +25,13 @@
                 height: 72px;
                 line-height: 72px;
                 color:#fff;
-                font-size: 18px;
+                font-size: 16px;
             }
             .level2-nav{
                 position: absolute;
                 top:100%;
                 left:0;
                 padding:25px;
-                width: max-content;
                 background-color:rgba(40,40,40, 0.5);
                 opacity: 0;
                 visibility: hidden;
@@ -36,8 +39,10 @@
                 &__item{
                     margin-bottom:10px;
                     a{
+                        display: block;
                         color:#fff;
-                        font-size: 18px;
+                        font-size: 14px;
+                        white-space: nowrap;
                     }
                 }
                 &__item:hover>a,
@@ -52,7 +57,7 @@
         &__item:hover{
             .level2-nav{
                 opacity: 1;
-                visibility: unset;
+                visibility: inherit;
             }
         }
         &__item:hover>a,
@@ -127,6 +132,9 @@
 	.header-zw{
         display: none;
     }
+    body{
+        padding-top:0;
+    }
 }
 
 
@@ -137,3 +145,49 @@
 //     background-repeat: no-repeat;
 //     background-size: cover;
 // }
+.advertisement{
+    &-item{
+        position: relative;
+        height: 950px;
+        overflow: hidden;
+        img{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            height: 100%;
+            max-width: initial;
+            width:auto !important;
+        }
+        &__content{
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            h4{
+                font-size: 32px;
+            }
+            div{
+                margin-top:20px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+ 
+
+@include md {
+    .advertisement{
+        &-item{
+            height: auto;
+            img{
+                position: relative;
+                top:0%;
+                left:0%;
+                transform: translate(0%, 0%);
+                height: auto;
+                max-width: 100%;
+                width:100% !important;
+            }
+        }
+    }
+}

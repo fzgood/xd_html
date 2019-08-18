@@ -1,6 +1,13 @@
 .solution{
+    .advertisement{
+        height: 950px;
+        &>div{
+            position: fixed;
+        }
+    }
     .page-type{
-        margin-top:30px;
+        position: relative;
+        z-index: 2;
         background-color:#3c3d3d;
         &__item{
             padding:40px;
@@ -15,7 +22,6 @@
                 font-size: 20px;
                 color:#fff;
                 line-height: 30px;
-                font-family: 'Myriad Pro';
             }
         }
         &__item:first-child{
@@ -23,10 +29,12 @@
         }
     }
     .page-overview{
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
         &__title{
             color:$mainColor;
             font-size: 50px;
-            font-family: 'Myriad Pro';
         }
         &__content{
             margin-top:50px;
@@ -51,40 +59,44 @@
         }
     }
     .page-solution{
+        position: relative;
+        z-index: 2;
+        background-color: #fff;
         &__title{
+            margin-bottom:40px;
             color:#898989;
             font-size: 20px;
-            font-family: 'Myriad Pro';
         }
         &__item{
-            margin-top:40px;
             &--thumbnail{
                 width: 450px;
                 height: 300px;
             }
             &--info{
                 padding:0 60px;
-                font-size: 20px;
-                font-family: 'Myriad Pro';
+                font-size: 18px;
                 &-title{
                     color:$mainColor;
                 }
                 &-content{
-                    margin-top:40px;
+                    margin-top:20px;
                     color:#575352;
-                    line-height: 35px;
+                    line-height: 30px;
                     letter-spacing: -1px;
                 }
                 &-href{
                     display: inline-block;
                     vertical-align: middle;
                     margin-top:30px;
-                    padding:10px 25px;
+                    padding:10px 30px;
                     color:#fff;
-                    font-size: 16px;
+                    font-size: 14px;
                     background-color:$mainColor;
                     border-radius: 25px;
                 }
+            }
+            &:last-child{
+                padding-bottom:40px;
             }
         }
         &__item:nth-child(even){
@@ -312,6 +324,12 @@
 
 @include md{
     .solution{
+        .advertisement{
+            height: auto;
+            &>div{
+                position: static;
+            }
+        }
         .page-election2{
             &__photo{
                 &--left{
