@@ -2,8 +2,8 @@ $mainColor: #ea5520;
 $boxDistance: 40px;
 @import "./components/mixin.scss";
 @import "./components/default_flex.scss";
-@import "./components/default_mobile.scss";
 @import "./components/default_header.scss";
+@import "./components/default_mobile.scss";
 @import "./components/default_footer.scss";
 @import "./components/default_index.scss";
 @import "./components/default_solution.scss";
@@ -240,4 +240,8 @@ body{
 /*iconfont*/
 .iconfont{
 	vertical-align: middle;
+}
+
+.bg-white{
+	background-color:#fff;
 }

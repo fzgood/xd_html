@@ -31,8 +31,8 @@ body{
                 position: absolute;
                 top:100%;
                 left:0;
-                padding:25px;
-                background-color:rgba(40,40,40, 0.5);
+                padding:20px;
+                background-color:#202121;
                 opacity: 0;
                 visibility: hidden;
                 /*transition: all 0.5s ease;*/
@@ -40,6 +40,7 @@ body{
                     margin-bottom:10px;
                     a{
                         display: block;
+                        padding:5px 10px;
                         color:#fff;
                         font-size: 14px;
                         white-space: nowrap;
@@ -187,6 +188,14 @@ body{
                 height: auto;
                 max-width: 100%;
                 width:100% !important;
+            }
+            &__content{
+                h4{
+                    font-size: 24px;
+                }
+                div{
+                    font-size: 14px;
+                }
             }
         }
     }

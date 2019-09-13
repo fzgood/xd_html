@@ -1,4 +1,12 @@
+.contact{
+    .banner{
+        position: fixed;
+        left:0;
+        width:100%;
+    }
+}
 .page-contact{
+    position: relative;
     font-family: 'Proxima Nova';
     &__left{
         font-size: 15px;
