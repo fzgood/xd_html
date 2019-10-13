@@ -14,3 +14,50 @@
         font-size: 35px;
     }
 }
+.case-main{
+    background-color:#f6f6f6;
+}
+.case-main__hd{
+    padding:40px 0;
+    color:$mainColor;
+    font-size: 24px;
+    font-weight: bold;
+    background-color:#e5e5e5;
+}
+.case-main__item--box{
+    font-size: 18px;
+    text-align: center;
+    background-color:#fff;
+}
+.case-main__item:nth-child(even) .case-main__item--box{
+    color:#ffffff;
+    background-color: #3c3d3d;
+}
+
+@include sm{
+    .case-main__hd{
+        padding:20px 0;
+    }
+}
+.case-detail{
+    padding:60px 0;
+}
+.case-detail__content{
+    margin-top:60px;
+    color:#666;
+    font-size: 16px;
+    line-height: 1.6;
+    p{
+        margin-bottom:15px;
+    }
+}
+
+
+@include sm{
+    .case-detail{
+        padding:30px 0;
+    }
+    .case-detail__content{
+        margin-top:30px;
+    }
+}

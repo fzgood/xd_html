@@ -18,13 +18,26 @@
 
 }
 .server-title{
-    padding-top:$boxDistance;
     color:#d0d0d0;
     font-size:66px;
     line-height: 85px;
     background-color:#e5e5e5;
+    height: 300px;
+    line-height: 450px;
+    background-size: cover;
 }
-
+.server-title.maintenance-bg{
+    color:#fff;
+    background-image: url('../images/Maintenance_02.jpg');
+}
+.server-title.product-bg{
+    color:#fff;
+    background-image: url('../images/Customization-Service_02.jpg');
+}
+.server-title.downfile-bg{
+    color:#fff;
+    background-image: url('../images/Download-Center_02.jpg');
+}
 .product{
     font-family: 'Proxima Nova';
     &-section{
@@ -53,11 +66,41 @@
             background-color:#e8e8e8;
         }
     }
+    .owl-nav{
+        font-size: 24px;
+        button{
+            outline: none;
+            position: absolute;
+            top:50%;
+            transform:translateY(-50%);
+            width:30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color:#fff;
+            // background-color:rgba(0,0,0,0.3) !important;
+            border-radius: 50%;
+            opacity: 0.6;
+            &:hover{
+                opacity: 1;
+            }
+            &.owl-prev{
+                left:0;
+                font-size:44px;
+            }
+            &.owl-next{
+                right:0;
+                font-size:44px;
+            }
+        }
+    }
     &-item{
         &__thumbnail{
             height:130px;
             line-height:130px;
             img{
+                margin:0 auto;
+                width:auto !important;
                 max-height: 130px;
             }
         }
@@ -96,31 +139,28 @@
         }
     }
 }
-.download{
-    font-family: 'Proxima Nova';
-    &-section{
-        &__item{
-            margin-bottom: $boxDistance;
-            &--title{
-                color:$mainColor;
-                font-size: 32px;
-            }
-            &--wrap{
-                margin-top:60px;
-            }
-        }
-    }
-    &-item{
-        margin-bottom:30px;
-        display: block;
-        text-align: center;
-        &__photo{
-            width:120px;
-        }
-        &__name{
-            margin-top:15px;
-        }
-    }
+.download-section__item--hd{
+    padding:40px 0;
+    color:$mainColor;
+    font-size: 24px;
+    background-color:#e5e5e5;
+}
+.download-section__item--box{
+    padding:40px 0;
+}
+.downfile-item{
+    padding:10px 20px;
+    border-bottom:1px solid #8c8c8c;
+}
+.downfile-item__content{
+    width:0;
+}
+.downfile-item__name{
+    font-size:16px;
+}
+.downfile-item__intro{
+    margin-top:5px;
+    color:#999;
 }
 .guide{
     font-family: 'Proxima Nova';
@@ -283,9 +323,6 @@
             &__name{
                 margin-top:20px;
             }
-        }
-        &-item:last-child{
-            display: none;
         }
     }
     .repair{

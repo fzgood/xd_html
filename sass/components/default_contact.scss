@@ -5,6 +5,18 @@
         width:100%;
     }
 }
+.contact-item{
+    margin-bottom:30px;
+}
+.contact-item:last-child{
+    margin-bottom:0;
+}
+.contact-item__name{
+    color:$mainColor
+}
+.contact-item__box{
+    line-height: 1.6;
+}
 .page-contact{
     position: relative;
     font-family: 'Proxima Nova';

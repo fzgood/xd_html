@@ -1,6 +1,9 @@
 body{
     padding-top:72px;
 }
+.header-logo{
+    width:150px;
+}
 .header{
     position: fixed;
     font-family: ProximaNova,Arial,Sans-serif;
@@ -32,7 +35,7 @@ body{
                 top:100%;
                 left:0;
                 padding:20px;
-                background-color:#202121;
+                background-color:rgba(32, 33, 33, 0.8);
                 opacity: 0;
                 visibility: hidden;
                 /*transition: all 0.5s ease;*/
@@ -82,7 +85,7 @@ body{
         top:50%;
         left:50%;
         transform: translate(-50%, -50%);
-        background-color:#e9e9e9;
+        background-color:#505050;
         padding:8px;
         border-radius: 5px;
       
@@ -91,14 +94,26 @@ body{
             padding:0 10px;
         }
         &-middle{
-            border-left:1px solid #999;
             input{
                 padding:6px 10px;
                 width:450px;
                 border:none;
                 outline: none;
+                color:#969797;
                 font-size: 16px;
                 background-color:transparent;
+                &::-webkit-input-placeholder{
+                    color:#969797;
+                }
+                &::-moz-placeholder{   /* Mozilla Firefox 19+ */
+                    color:#969797;
+                }
+                &:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+                    color:#969797;
+                }
+                &:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+                    color:#969797;
+                }
             }
         }
         &-close{
@@ -113,7 +128,7 @@ body{
                 left:50%;
                 width:1px;
                 height: 100%;
-                background-color: #333;
+                background-color: #969797;
                 transform: translate(-50%, -50%) rotate(45deg);
             }
             &::after{

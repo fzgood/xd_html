@@ -42,7 +42,7 @@
                 background-repeat: no-repeat;
                 background-color: rgba(0,0,0,.4);
                 background-size: 50px 50px;
-                background-image: url(../images/detail.png);
+                // background-image: url(../images/detail.png);
                 background-position: center;
                 opacity: 0;
                 transition: all 0.5s ease;
@@ -140,15 +140,14 @@
     .news-box{
         padding:$boxDistance 0;
         background-color:#f6f6f6;
-        &__wrap{
-            &>div:nth-child(n+3){
-                display: none;
-            }
-        }
+        // &__wrap{
+        //     &>div:nth-child(n+3){
+        //         display: none;
+        //     }
+        // }
     }
     &__title{
-        height:$boxDistance;
-        line-height:$boxDistance;
+        padding:$boxDistance;
         color:$mainColor;
         font-size: 21px;
         background-color:#e5e5e5;
@@ -174,8 +173,7 @@
             background-color:#f6f6f6;
         }
         &__title{
-            height:46px;
-            line-height:46px;
+            padding:20px 0;
         }
     }
     .detail{
