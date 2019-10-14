@@ -647,3 +647,66 @@
         }
     }
 }
+
+.page-detail{
+    padding:60px 0;
+}
+.page-detail__content{
+    margin-top:60px;
+}
+.page-detail__content p{
+    margin-bottom:30px;
+    line-height: 1.8;
+    color:#666;
+    font-size:18px;
+}
+.page-detail__content ul{
+    color:$mainColor;
+    li{
+        margin-bottom:20px;
+        font-weight: bold;;
+        &::before{
+            content:'';
+            margin-right: 15px;
+            display:inline-block;
+            width:10px;
+            height: 10px;
+            background-color:$mainColor;
+            border-radius:50%;
+        }
+    }
+}
+.page-detail__title{
+    color:$mainColor;
+    font-size:36px;
+}
+
+
+@include md {
+    .page-detail{
+        padding:30px 0;
+    }
+    .page-detail__title{
+        font-size:24px;
+    }
+    .page-detail__content{
+        margin-top:30px;
+    }
+    .page-detail__content p{
+        margin-bottom:20px;
+        font-size:16px;
+        line-height: 1.6;
+    }
+}
+
+@include sm {
+    .page-detail{
+        padding:20px 0;
+    }
+    .page-detail__content{
+        margin-top:20px;
+    }
+    .page-detail__content p{
+        margin-bottom:10px;
+    }
+}

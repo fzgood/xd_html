@@ -247,9 +247,17 @@ body{
 .bg-white{
 	background-color:#fff;
 }
-
+.bg-grey{
+	background-color:#f1f1f1;
+}
+.bg-dark{
+	background-color:#3c3d3d
+}
  
 /*外边距*/
+.no-margin{
+	margin:0 !important;
+}
 .mg5{margin:5px;}.mt5{margin-top:5px;}.mr5{margin-right:5px;}.mb5{margin-bottom:5px;}.ml5{margin-left:5px;}
 .mg10{margin:10px;}.mt10{margin-top:10px;}.mr10{margin-right:10px;}.mb10{margin-bottom:10px;}.ml10{margin-left:10px;}
 .mg15{margin:15px;}.mt15{margin-top:15px;}.mr15{margin-right:15px;}.mb15{margin-bottom:15px;}.ml15{margin-left:15px;}
