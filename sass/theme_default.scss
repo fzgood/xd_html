@@ -1,18 +1,18 @@
 $mainColor: #ea5520;
 $boxDistance: 40px;
-@import "./components/mixin.scss";
-@import "./components/default_flex.scss";
-@import "./components/default_header.scss";
-@import "./components/default_mobile.scss";
-@import "./components/default_footer.scss";
-@import "./components/default_index.scss";
-@import "./components/default_solution.scss";
-@import "./components/default_case.scss";
-@import "./components/default_server.scss";
-@import "./components/default_news.scss";
-@import "./components/default_about.scss";
-@import "./components/default_contact.scss";
-@import "./components/default_location.scss";
+@import "components/mixin.scss";
+@import "components/default_flex.scss";
+@import "components/default_header.scss";
+@import "components/default_mobile.scss";
+@import "components/default_footer.scss";
+@import "components/default_index.scss";
+@import "components/default_solution.scss";
+@import "components/default_case.scss";
+@import "components/default_server.scss";
+@import "components/default_news.scss";
+@import "components/default_about.scss";
+@import "components/default_contact.scss";
+@import "components/default_location.scss";
 
 body{
 	color:#000;
@@ -253,7 +253,7 @@ body{
 .bg-dark{
 	background-color:#3c3d3d
 }
- 
+
 /*外边距*/
 .no-margin{
 	margin:0 !important;
@@ -264,7 +264,7 @@ body{
 .mg20{margin:20px;}.mt20{margin-top:20px;}.mr20{margin-right:20px;}.mb20{margin-bottom:20px;}.ml20{margin-left:20px;}
 .mg30{margin:30px;}.mt30{margin-top:30px;}.mr30{margin-right:30px;}.mb30{margin-bottom:30px;}.ml30{margin-left:30px;}
 .mg40{margin:40px;}.mt40{margin-top:40px;}.mr40{margin-right:40px;}.mb40{margin-bottom:40px;}.ml40{margin-left:40px;}
- 
+
 /*内边距*/
 .pd5{padding:5px;}.pt5{padding-top:5px;}.pr5{padding-right:5px;}.pb5{padding-bottom:5px;}.pl5{padding-left:5px;}
 .pd10{padding:10px;}.pt10{padding-top:10px;}.pr10{padding-right:10px;}.pb10{padding-bottom:10px;}.pl10{padding-left:10px;}
@@ -272,7 +272,7 @@ body{
 .pd20{padding:20px;}.pt20{padding-top:20px;}.pr20{padding-right:20px;}.pb20{padding-bottom:20px;}.pl20{padding-left:20px;}
 .pd30{padding:30px;}.pt30{padding-top:30px;}.pr30{padding-right:30px;}.pb30{padding-bottom:30px;}.pl30{padding-left:30px;}
 .pd40{padding:40px;}.pt40{padding-top:40px;}.pr40{padding-right:40px;}.pb40{padding-bottom:40px;}.pl40{padding-left:40px;}
- 
+
 /*面包屑*/
 .main-crumbs{
 	color:#3b3c3c;

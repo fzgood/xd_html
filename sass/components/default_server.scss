@@ -183,7 +183,7 @@
             }
         }
         &__good{
-            a{  
+            a{
                 margin-right: 20px;
                 padding:0 20px 0 60px;
                 display: inline-block;
@@ -296,9 +296,6 @@
                     font-size: 14px;
                 }
             }
-            &--item:last-child,&--item:nth-last-child(2){
-                margin-top:40px;
-            }
         }
     }
 
@@ -351,7 +348,7 @@
                 }
                 &--wrap{
                     margin-top:40px;
-                    
+
                 }
             }
         }
@@ -389,7 +386,7 @@
         &-item{
             margin-bottom:60px;
         }
-        
+
         &-process{
             position: relative;
             &::before{
