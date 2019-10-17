@@ -49,6 +49,10 @@
     }
 }
 
+.share-url.flex{
+    display: flex;
+}
+
 @include md {
     .footer{
         padding:30px 0;

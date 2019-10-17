@@ -55,7 +55,7 @@ $(document).ready(function(){
 
 
 
-    var location = ["繁体中文(HK)","繁体中文(TW)","Singapore","Malaysia","Philippines","India","Indonesia","GlobalHome","MENA","Poland","Ukraine","Russia","Vietnam","Mexico","Korea","Egypt","Thalland","Spain","UnitedStates","ltaly","France","Bangladesh","UnitedKingdom","Chile","Nepal","Sril anka","Turkey","Netherlands","Brazil","中文站"];
+    var location_web = ["繁体中文(HK)","繁体中文(TW)","Singapore","Malaysia","Philippines","India","Indonesia","GlobalHome","MENA","Poland","Ukraine","Russia","Vietnam","Mexico","Korea","Egypt","Thalland","Spain","UnitedStates","ltaly","France","Bangladesh","UnitedKingdom","Chile","Nepal","Sril anka","Turkey","Netherlands","Brazil","中文站"];
     var locationArr = [];
     locationArr.push('<div class="location">');
     locationArr.push('<div class="location-mask"></div>');
@@ -68,7 +68,7 @@ $(document).ready(function(){
     locationArr.push('<div class="location-main__title">Welcome to Emperor Tech.com</div>');
     locationArr.push('<div class="location-main__intro">Please select location</div>');
     locationArr.push('<div class="location-main__box">');
-    for(var i = 0 ;i<location.length;i++){
+    for(var i = 0 ;i<location_web.length;i++){
         locationArr.push('<div class="location-item"><div class="location-item__name">'+location[i]+'</div></div>');
     }
     locationArr.push('</div>');
@@ -88,5 +88,32 @@ $(document).ready(function(){
     new WOW({
         mobile: false
     }).init();
+
+
+    $('body').on('click', '.share-url', function(e){
+        var $this = $(this);
+        var shareUrl = $this.attr('data-share');
+        var type = $this.attr('data-type');
+        if(!shareUrl){
+            shareUrl = location.href
+        }
+        var url = 'https://www.linkedin.com/shareArticle?url=';
+        switch(type){
+            case "LinkedIn":
+                url="https://www.linkedin.com/shareArticle?url="
+            break;
+            case "Facebook":
+                url="https://www.facebook.com/sharer.php?u="
+            break;
+            case "Twitter":
+                url="http://twitter.com/share?url="
+            break;
+            case "Youtube":
+                url="https://www.linkedin.com/shareArticle?url="
+            break;
+        };
+        window.open(url+shareUrl, "_blank"); 
+        return false;
+    });
 
 })
