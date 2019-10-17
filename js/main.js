@@ -1,4 +1,5 @@
 $(document).ready(function(){
+   
     var $navBtn = $('.mobile-hd__btn');
     var $nav = $('.mobile-nav');
     var $childNavItem = $('.mobile-nav__item');
@@ -55,26 +56,36 @@ $(document).ready(function(){
 
 
 
-    var location_web = ["繁体中文(HK)","繁体中文(TW)","Singapore","Malaysia","Philippines","India","Indonesia","GlobalHome","MENA","Poland","Ukraine","Russia","Vietnam","Mexico","Korea","Egypt","Thalland","Spain","UnitedStates","ltaly","France","Bangladesh","UnitedKingdom","Chile","Nepal","Sril anka","Turkey","Netherlands","Brazil","中文站"];
     var locationArr = [];
-    locationArr.push('<div class="location">');
-    locationArr.push('<div class="location-mask"></div>');
-    locationArr.push('<div class="location-main bg-white">');
-    locationArr.push('<div class="flex flex-item-center location-main__hd">');
-    locationArr.push('<div class="location-main__name flex-item">Select location</div>');
-    locationArr.push('<div class="location-main__close"></div>');
-    locationArr.push('</div>');
-    locationArr.push('<div class="pd30 text-center">');
-    locationArr.push('<div class="location-main__title">Welcome to Emperor Tech.com</div>');
-    locationArr.push('<div class="location-main__intro">Please select location</div>');
-    locationArr.push('<div class="location-main__box">');
-    for(var i = 0 ;i<location_web.length;i++){
-        locationArr.push('<div class="location-item"><div class="location-item__name">'+location_web[i]+'</div></div>');
-    }
-    locationArr.push('</div>');
-    locationArr.push('</div>');
-    locationArr.push('</div>');
-    locationArr.push('</div>');
+    (function(){
+        $.ajax({
+            url: 'http://dx.yige360.com/local.json',
+            success: function(res){
+                if(res.code == 0){
+                    var items = res.data;
+                    locationArr.push('<div class="location">');
+                    locationArr.push('<div class="location-mask"></div>');
+                    locationArr.push('<div class="location-main bg-white">');
+                    locationArr.push('<div class="flex flex-item-center location-main__hd">');
+                    locationArr.push('<div class="location-main__name flex-item">Select location</div>');
+                    locationArr.push('<div class="location-main__close"></div>');
+                    locationArr.push('</div>');
+                    locationArr.push('<div class="pd30 text-center">');
+                    locationArr.push('<div class="location-main__title">Welcome to Emperor Tech.com</div>');
+                    locationArr.push('<div class="location-main__intro">Please select location</div>');
+                    locationArr.push('<div class="location-main__box">');
+                    for(var i = 0 ;i<items.length;i++){
+                        locationArr.push('<div class="location-item"><div class="location-item__name">'+items[i]+'</div></div>');
+                    }
+                    locationArr.push('</div>');
+                    locationArr.push('</div>');
+                    locationArr.push('</div>');
+                    locationArr.push('</div>');
+                }
+            }
+        })
+    })()
+    
     
     $('body').on('click', '.location-main__close', function(){
         $('.location').remove();
