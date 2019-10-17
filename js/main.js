@@ -69,7 +69,7 @@ $(document).ready(function(){
     locationArr.push('<div class="location-main__intro">Please select location</div>');
     locationArr.push('<div class="location-main__box">');
     for(var i = 0 ;i<location_web.length;i++){
-        locationArr.push('<div class="location-item"><div class="location-item__name">'+location[i]+'</div></div>');
+        locationArr.push('<div class="location-item"><div class="location-item__name">'+location_web[i]+'</div></div>');
     }
     locationArr.push('</div>');
     locationArr.push('</div>');
