@@ -33,6 +33,9 @@
     color:#ffffff;
     background-color: #3c3d3d;
 }
+.case-main__item--box:hover{
+    color:$mainColor !important;
+}
 
 @include sm{
     .case-main__hd{
