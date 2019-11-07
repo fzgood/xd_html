@@ -127,4 +127,8 @@ $(document).ready(function(){
         return false;
     });
 
+    $('.process-move').on('click', function(){
+        $('html,body').animate({scrollTop: $(this).parents('.process-section__item').offset().top -100},500);
+    });
+
 })

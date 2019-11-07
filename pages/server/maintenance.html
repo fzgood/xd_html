@@ -12,6 +12,17 @@
     <link rel="stylesheet" href="../../css/base.css">
     <link rel="stylesheet" href="../../css/iconfont.css">
     <link rel="stylesheet" href="../../css/theme_default.css">
+    <style>
+    #map{
+        height: 600px;
+    }
+    #map .BMap_cpyCtrl {
+        display:  none;
+    }
+    #map .anchorBL{
+        display: none;
+    }
+    </style>
 </head>
 
 <body class="repair">
@@ -168,7 +179,7 @@
                 </div>
             </div>
             <div class="repair-section__map">
-                <img src="../../images/Maintenance_05.jpg" alt="">
+                <div id="map"></div>
             </div>
         </div>
     </div>
@@ -275,6 +286,10 @@
     <script type="text/javascript" src="../../js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="../../js/wow.min.js"></script>
     <script type="text/javascript" src="../../js/main.js"></script>
+    <script src="https://api.map.baidu.com/api?v=2.0" type="text/javascript"></script>
+    <script type="text/javascript" src="../../js/echarts.min.js"></script>
+    <script type="text/javascript" src="../../js/bmap.min.js"></script>
+    <script type="text/javascript" src="../../js/map.js"></script>
 </body>
 
 </html>

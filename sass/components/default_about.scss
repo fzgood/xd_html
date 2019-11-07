@@ -13,6 +13,18 @@
         color:$mainColor;
         font-size: 20px;
     }
+    &-move{
+        position: absolute;
+        top:50%;
+        left:0;
+        transform: translate(-51px, -50%);
+        width:10px;
+        height: 10px;
+        background-color:$mainColor;
+        border-radius: 50%;
+        box-shadow: 0px 0px 0px 4px #f4aa8f;
+        cursor: pointer;
+    }
     &-section{
         margin-top:60px;
         padding-left:45px;
@@ -23,18 +35,6 @@
             &--hd{
                 position: relative;
                 color:$mainColor;
-                &::after{
-                    content:'';
-                    position: absolute;
-                    top:50%;
-                    left:0;
-                    transform: translate(-51px, -50%);
-                    width:10px;
-                    height: 10px;
-                    background-color:$mainColor;
-                    border-radius: 50%;
-                    box-shadow: 0px 0px 0px 4px #f4aa8f;
-                }
             }
             &--date{
                 font-size: 30px;
