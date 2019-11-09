@@ -17,7 +17,7 @@
         position: absolute;
         top:50%;
         left:0;
-        transform: translate(-51px, -50%);
+        transform: translate(-111px, -50%);
         width:10px;
         height: 10px;
         background-color:$mainColor;
@@ -27,7 +27,7 @@
     }
     &-section{
         margin-top:60px;
-        padding-left:45px;
+        padding-left:105px;
         border-left:2px solid $mainColor;
         &__item{
             padding-top:30px;
@@ -131,6 +131,8 @@
 }
 
 @include sm{
+
+
     .page-about{
         &__content{
             p{
@@ -142,6 +144,9 @@
         }
     }
     .process{
+        &-move{
+            display: none;
+        }
         &-section{
             margin-top:30px;
             padding-left:25px;

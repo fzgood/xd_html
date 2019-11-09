@@ -9,7 +9,7 @@
     &-category{
         &__item{
             font-size: 15px;
-            margin-right:120px;  
+            margin-right:120px;
             &--title{
                 color:#dcdddd;
             }
@@ -39,15 +39,28 @@
             text-align: right;
         }
         &__href{
+            position:relative;
             display: inline-block;
             vertical-align: middle;
             color:#818181;
-            padding:0 5px;
-            border-right:1px solid #c9caca;
+            padding:0 10px;
+            &::after{
+                content:'';
+                position: absolute;
+                right:0;
+                top:0;
+                height: 100%;
+                width:1px;
+                background-color:#aaa;
+                transform: rotate(-15deg);
+            }
         }
         &__href:last-child{
             padding-right:0;
             border-right: 0;
+            &::after{
+                display: none;
+            }
         }
     }
 }
@@ -115,5 +128,5 @@
             }
         }
     }
-    
+
 }
