@@ -14,13 +14,51 @@
     <link rel="stylesheet" href="../../css/theme_default.css">
     <style>
     #map{
-        height: 600px;
+        position: relative;
     }
-    #map .BMap_cpyCtrl {
-        display:  none;
+    .map-item{
+        position: absolute;
+        width: 8.8%;
+        top:0;
+        left:0;
+        cursor: pointer;
+        z-index: 3;
     }
-    #map .anchorBL{
-        display: none;
+    .map-item div{
+        height: 0;
+        padding-bottom:30%;
+    }
+    .map-item.united{
+        top: 41.6%;
+        left: 16%;
+    }
+    .map-item.shenzhen{
+        top: 50%;
+        left: 78%;
+    }
+    .map-item.russia{
+        top: 32%;
+        left: 71%;
+    }
+    .map-item.nigeria{
+        top: 64%;
+        left: 54%;
+    }
+    .map-item.lndia{
+        top: 52%;
+        left: 66%;
+    }
+    .map-item.belarus{
+        top: 39%;
+        left: 46%;
+    }
+    .map-item.beijing{
+        top: 42.5%;
+        left: 78%;
+    }
+    .map-item.baotou{
+        top: 38.5%;
+        left: 69%;
     }
     </style>
 </head>
@@ -173,13 +211,21 @@
     </div>
     <div class="page-box repair-section">
         <div class="container">
-            <div class="row">
-                <div class="repair-section__filter">
-                    <div class="repair-section__filter--name">Please select a service outlet</div>
-                </div>
+            <div class="repair-section__filter">
+                <div class="repair-section__filter--name">Please select a service outlet</div>
             </div>
             <div class="repair-section__map">
-                <div id="map"></div>
+                <div id="map">
+                        <div class="map-item baotou" data-type="baotou"><div></div></div>
+                        <div class="map-item beijing" data-type="beijing"><div></div></div>
+                        <div class="map-item belarus" data-type="belarus"><div></div></div>
+                        <div class="map-item lndia" data-type="lndia"><div></div></div>
+                        <div class="map-item nigeria" data-type="nigeria"><div></div></div>
+                        <div class="map-item russia" data-type="russia"><div></div></div>
+                        <div class="map-item shenzhen" data-type="shenzhen"><div></div></div>
+                        <div class="map-item united" data-type="united"><div></div></div>
+                    <img src="../../images/shenzhen.jpg" class="map-image">
+                </div>
             </div>
         </div>
     </div>
@@ -286,10 +332,6 @@
     <script type="text/javascript" src="../../js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="../../js/wow.min.js"></script>
     <script type="text/javascript" src="../../js/main.js"></script>
-    <script src="https://api.map.baidu.com/api?v=2.0" type="text/javascript"></script>
-    <script type="text/javascript" src="../../js/echarts.min.js"></script>
-    <script type="text/javascript" src="../../js/bmap.min.js"></script>
-    <script type="text/javascript" src="../../js/map.js"></script>
 </body>
 
 </html>

@@ -131,4 +131,18 @@ $(document).ready(function(){
         $('html,body').animate({scrollTop: $(this).parents('.process-section__item').offset().top -100},500);
     });
 
+
+
+    $('.header-nav__item').hover(function(){
+        $(this).find('.level2-nav').stop().slideDown(300);
+    }, function(){
+        $(this).find('.level2-nav').stop().slideUp(300);
+    })
+
+
+    $('.map-item').on('click', function(){
+        var type = $(this).data('type')
+        console.log(type);
+        $('.map-image').attr('src', '../../images/'+type+'.jpg');
+    })
 })
