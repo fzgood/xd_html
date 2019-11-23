@@ -12,6 +12,25 @@
     <link rel="stylesheet" href="../../css/base.css">
     <link rel="stylesheet" href="../../css/iconfont.css">
     <link rel="stylesheet" href="../../css/theme_default.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">    
+    <style>
+    
+
+.swiper-container{
+--swiper-navigation-color: #fff;/* 单独设置按钮颜色 */
+}
+.swiper-pagination-bullet{
+width: 48px;
+height: 3px;
+display: inline-block;
+border-radius: 3px;
+background: #fff;
+opacity: .2;
+}
+.swiper-pagination-bullet-active{
+background-color: #fff;
+opacity:1;
+}</style>
 </head>
 
 <body class="index">
@@ -95,6 +114,9 @@
                             <ul class="level2-nav">
                                 <li class="level2-nav__item">
                                     <a href="../solution/secure2.html" class="level2-nav__item--href">Secure Identity Docement</a>
+                                    <div class="banner-content">
+                                        
+                                    </div>
                                 </li>
                                 <li class="level2-nav__item">
                                     <a href="../solution/smart2.html" class="level2-nav__item--href">Smart Services</a>
@@ -154,21 +176,68 @@
             </div>
         </div>
     </div>
-    <div class="banner advertisement">
-        <div class="owl-carousel owl-theme">
-            <div class="item advertisement-item">
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
                 <img src="../../images/Index-Banner-01.jpg" alt="banner">
+                <div class="banner-content">
+                    <div class="banner-content--title">
+                        <div>Secure Cloud Management</div>
+                        <div>Platform for Identity</div>
+                    </div>
+                    <div class="banner-content--intro">
+                        <div>A trusted identity ecosystem offers authentication</div>
+                        <div>to various  applications</div>
+                    </div>
+                </div>
+                
             </div>
-            <div class="item advertisement-item">
+            <div class="swiper-slide">
                 <img src="../../images/Index-Banner-02.jpg" alt="banner">
+                <div class="banner-content two text-center">
+                    <div class="banner-content--title">
+                        <div>Electronic Voting System</div>
+                    </div>
+                    <div class="banner-content--intro">
+                        <div>Automatic result statistics</div>
+                        <div>Speed up vote collection</div>
+                        <div>Block-chain provides security</div>
+                    </div>
+                </div>
             </div>
-            <div class="item advertisement-item">
+            <div class="swiper-slide">
                 <img src="../../images/Index-Banner-03.jpg" alt="banner">
+                <div class="banner-content">
+                    <div class="banner-content--title">
+                        <div>AFC System for Urban </div>
+                        <div>Rail Transit</div>
+                    </div>
+                    <div class="banner-content--intro">
+                        <div>Successful implementation in more</div>
+                        <div>than 30 cities</div>
+                    </div>
+                </div>
             </div>
-            <div class="item advertisement-item">
+            <div class="swiper-slide">
                 <img src="../../images/Index-Banner-04.jpg" alt="banner">
+                <div class="banner-content">
+                    <div class="banner-content--title">
+                        <div>MLP (Multilayer Perso)</div>
+                    </div>
+                    <div class="banner-content--intro">
+                        <div>Innovative Color Printing Technology with</div>
+                        <div>Secure Digital Printing</div>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
     <div class="page-box">
         <div class="container">
@@ -417,7 +486,7 @@
                     <div class="col-lg-6 ">
                         <div class="footer-copyright__right">
                             <a class="footer-copyright__href" id="location">Location</a>
-                            <a class="footer-copyright__href">Legal Links</a>
+                            <a class="footer-copyright__href">Links</a>
                             <a class="footer-copyright__href">Legal</a>
                         </div>
                     </div>
@@ -429,7 +498,10 @@
     <script type="text/javascript" src="../../js/jquery.min.js"></script>
     <script type="text/javascript" src="../../js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="../../js/wow.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
     <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="../../js/banner.js"></script>
+
 </body>
 
 </html>

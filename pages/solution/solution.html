@@ -12,6 +12,25 @@
     <link rel="stylesheet" href="../../css/base.css">
     <link rel="stylesheet" href="../../css/iconfont.css">
     <link rel="stylesheet" href="../../css/theme_default.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">    
+    <style>
+    
+
+.swiper-container{
+--swiper-navigation-color: #fff;/* 单独设置按钮颜色 */
+}
+.swiper-pagination-bullet{
+width: 48px;
+height: 3px;
+display: inline-block;
+border-radius: 3px;
+background: #fff;
+opacity: .2;
+}
+.swiper-pagination-bullet-active{
+background-color: #fff;
+opacity:1;
+}</style>
 </head>
 
 <body class="solution">
@@ -154,12 +173,42 @@
             </div>
         </div>
     </div>
-    <div class="banner advertisement">
-        <div class="owl-carousel owl-theme">
-            <div class="item advertisement-item">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
                 <img src="../../images/02.Solutions-Banner.jpg" alt="banner">
+                <div class="banner-content two text-center">
+                    <div class="banner-content--title">
+                        <div>Electronic Voting System</div>
+                    </div>
+                    <div class="banner-content--intro">
+                        <div>We can provide a complete customized</div>
+                        <div>solution to meet the needs of</div>
+                        <div>different customers</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="swiper-slide">
+                <img src="../../images/02.Solutions-Banner.jpg" alt="banner">
+                <div class="banner-content two text-center">
+                    <div class="banner-content--title">
+                        <div>Electronic Voting System</div>
+                    </div>
+                    <div class="banner-content--intro">
+                        <div>We can provide a complete customized</div>
+                        <div>solution to meet the needs of</div>
+                        <div>different customers</div>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
     <div class="page-type">
         <div class="container">
@@ -390,7 +439,9 @@
     <script type="text/javascript" src="../../js/jquery.min.js"></script>
     <script type="text/javascript" src="../../js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="../../js/wow.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
     <script type="text/javascript" src="../../js/main.js"></script>
+    <script type="text/javascript" src="../../js/banner.js"></script>
 </body>
 
 </html>

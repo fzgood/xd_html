@@ -5,6 +5,7 @@ $boxDistance: 40px;
 @import "components/default_header.scss";
 @import "components/default_mobile.scss";
 @import "components/default_footer.scss";
+@import "components/default_search.scss";
 @import "components/default_index.scss";
 @import "components/default_solution.scss";
 @import "components/default_case.scss";
@@ -293,4 +294,101 @@ body{
 
 .no-transition{
 	transform: none !important;
+}
+
+.banner-content{
+	position: absolute;
+	top:50%;
+	left:20%;
+	transform: translate(40%,-60%);
+	transition:  all 0.8s ease;
+	opacity: 0;
+}
+.swiper-slide-active .banner-content{
+	transform: translateY(-60%);
+	opacity: 1;
+}
+.banner-content.two{
+	left:50%;
+	transform: translate(-20%, -50%);
+	opacity: 0;
+}
+.swiper-slide-active .banner-content.two{
+	transform: translate(-50%, -50%);
+	opacity: 1;
+}
+.banner-content{
+	color:#fff;
+	line-height: 1.4;
+}
+.banner-content--title{
+	font-size: 48px;
+}
+.banner-content--intro{
+	margin-top: 30px;
+	font-size: 24px;
+}
+.banner-content.contact{
+	color: #6b6b6b;
+}
+@include sm {
+	
+.banner-content{
+	color:#fff;
+	line-height: 1.3;
+	width: 100%;
+	text-align: center;
+	top:50%;
+	left:50%;
+}
+.swiper-slide-active .banner-content{
+	transform: translate(-50%, -50%);
+	opacity: 1;
+}
+.banner-content--title{
+	font-size: 18px;
+}
+.banner-content--intro{
+	margin-top: 10px;
+	font-size: 14px;
+}
+.swiper-button-prev,.swiper-button-next{
+	display: none !important;
+}
+}
+.jjfa-page3-hd{
+	height: 92px;
+	line-height: 92px;
+	border-bottom: 1px solid #a0a0a0;
+	a{
+		padding: 0px 10px;
+		color: #3b3c3c;
+		font-size: 22px;
+		&:first-child{
+			padding-left: 0;
+		}
+		&:last-child{
+			color: $mainColor;
+		}
+	}
+}
+.jjfa-page3-title{
+	font-weight: bold;
+	font-size: 48px;
+}
+@include sm {
+	
+.jjfa-page3-hd{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #a0a0a0;
+	a{
+		color: #3b3c3c;
+		font-size: 16px;
+	}
+}
+
+.jjfa-page3-title{
+	font-size: 18px;
+}
 }

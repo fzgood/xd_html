@@ -142,7 +142,7 @@ $(document).ready(function(){
 
     $('.map-item').on('click', function(){
         var type = $(this).data('type')
-        console.log(type);
         $('.map-image').attr('src', '../../images/'+type+'.jpg');
     })
+    
 })

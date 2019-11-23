@@ -5,67 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Maintenance</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/owl.carousel.min.css">
     <link rel="stylesheet" href="../../css/animate.css">
     <link rel="stylesheet" href="../../css/base.css">
     <link rel="stylesheet" href="../../css/iconfont.css">
     <link rel="stylesheet" href="../../css/theme_default.css">
-    <style>
-    #map{
-        position: relative;
-    }
-    .map-item{
-        position: absolute;
-        width: 8.8%;
-        top:0;
-        left:0;
-        cursor: pointer;
-        z-index: 3;
-    }
-    .map-item div{
-        height: 0;
-        padding-bottom:30%;
-    }
-    .map-item.united{
-        top: 41.6%;
-        left: 16%;
-    }
-    .map-item.shenzhen{
-        top: 50%;
-        left: 78%;
-    }
-    .map-item.russia{
-        top: 32%;
-        left: 71%;
-    }
-    .map-item.nigeria{
-        top: 64%;
-        left: 54%;
-    }
-    .map-item.lndia{
-        top: 52%;
-        left: 66%;
-    }
-    .map-item.belarus{
-        top: 39%;
-        left: 46%;
-    }
-    .map-item.beijing{
-        top: 42.5%;
-        left: 78%;
-    }
-    .map-item.baotou{
-        top: 38.5%;
-        left: 69%;
-    }
-    </style>
+
 </head>
 
-<body class="repair">
+<body class="index">
     <div class="flex flex-item-center mobile-hd">
-            <a class="mobile-hd__logo" href="../index/index.html">
+            <a class="mobile-hd__logo" href="./index.html">
                 <img src="../../images/mobile-logo.jpg" alt="">
             </a>
             <div class="flex-item"></div>
@@ -138,7 +90,7 @@
                     <a href="../index/index.html"><img src="../../images/logo.png" alt="雄帝"></a>
                 </div>
                 <div class="flex-item header-middle">
-                    <ul class=" flex flex-item-center flex-justify-end header-nav my-show">
+                    <ul class=" flex flex-item-center flex-justify-end header-nav my-hide">
                         <li class="header-nav__item">
                             <a href="../solution/solution.html" class="header-nav__item--text">Solutions</a>
                             <ul class="level2-nav">
@@ -190,55 +142,60 @@
                         </li>
                         <li class="header-nav__item"><a href="../contact/contact.html" class="header-nav__item--text">Contact Us</a></li>
                     </ul>
-                    <div class="flex flex-item-center search my-hide">
+                    <div class="flex flex-item-center search my-show">
                         <div class="search-middle">
                             <input type="text" placeholder="Search for...">
                         </div>
-                        <div class="search-close"></div>
+                        <!-- <div class="search-close glyphicon glyphicon-search"></div> -->
+                        <span class="glyphicon glyphicon-search" aria-hidden="true" style="color:#fff;cursor: pointer;"></span>
                     </div>
                 </div>
-                <div class="header-search my-show">
+                <div class="header-search my-hide">
                     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                 </div>
             </div>
         </div>
     </div>
-    <div class="header-zw"></div>
-    <div class="server-title maintenance-bg">
+    <div class="search-hd">
         <div class="container">
-            Maintenance
+            Search Result : <span class="text-mainColor">Dispensing</span>
         </div>
     </div>
-    <div class="page-box repair-section">
+    <div class="search-bd ">
         <div class="container">
-            <div class="repair-section__filter">
-                <div class="repair-section__filter--name">Please select a service outlet</div>
-            </div>
-            <div class="repair-section__map">
-                <div id="map">
-                        <div class="map-item baotou" data-type="baotou"><div></div></div>
-                        <div class="map-item beijing" data-type="beijing"><div></div></div>
-                        <div class="map-item belarus" data-type="belarus"><div></div></div>
-                        <div class="map-item lndia" data-type="lndia"><div></div></div>
-                        <div class="map-item nigeria" data-type="nigeria"><div></div></div>
-                        <div class="map-item russia" data-type="russia"><div></div></div>
-                        <div class="map-item shenzhen" data-type="shenzhen"><div></div></div>
-                        <div class="map-item united" data-type="united"><div></div></div>
-
-                            
-                        <div class="email-item belarus" data-email="MAIL@IDMETRIX.BY"><div></div></div>
-                        <div class="email-item lndia" data-email="SHELDON.SONG@EMPERORTECH.COM"><div></div></div>
-                        <div class="email-item nigeria" data-email="DYLAN.DENG@EMPERORTECH.COM"><div></div></div>
-                        <div class="email-item russia" data-email="CARDHALL@CARDHALL.RU"><div></div></div>
-                        <div class="email-item shenzhen" data-email="MARKETING@EMPERORTECH.COM"><div></div></div>
-                        <div class="email-item united" data-email="SALES@EMPERORTECH.US"><div></div></div>
-                        
-                    <img src="../../images/default.jpg" class="map-image">
+            <div class="flex">
+                <div class="search-bd__left">
+                    <div><a href="#" class="active">Solutions</a></div>
+                    <div><a href="#">Download Center</a></div>
+                    <div><a href="#">Case Studies</a></div>
+                    <div><a href="#">News</a></div>
+                </div>
+                <div class="flex-item">
+                    <div class="search-content">
+                        <div class="search-content__item">
+                            <div class="search-content__item--title active">Dispensing </div>
+                            <div class="search-content__item--content">The introduction of the intelligent service system has greatly improved the convenience of people's daily life, reduced the statistical maintenance work of the operators, and thus improved the management efficiency... ... </div>
+                        </div>
+                        <div class="search-content__item">
+                            <div class="search-content__item--title">Online / Offline Service   </div>
+                            <div class="search-content__item--content">The introduction of the intelligent service system has greatly improved the convenience of people's daily life, reduced the statistical maintenance work of the operators, and thus improved the management efficiency... ... </div>
+                        </div>
+                        <div class="search-content__item">
+                            <div class="search-content__item--title">Online Document Management </div>
+                            <div class="search-content__item--content">The introduction of the intelligent service system has greatly improved the convenience of people's daily life, reduced the statistical maintenance work of the operators, and thus improved the management efficiency... ... </div>
+                        </div>
+                    </div>
+                    <div class="text-center search-page">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </div>
-
     <div class="footer">
         <div class="container">
             <div class="flex footer-category">
@@ -306,16 +263,28 @@
                     <h4 class="footer-category__item--title">RELATED LINKS</h4>
                     <ul class="footer-category__item--ul">
                         <li class="footer-category__item--ul-li">
-                            <a class="footer-category__item--ul-li-a">LinkedIn</a>
+                            <a class="flex flex-item-center footer-category__item--ul-li-a " href="#" target="_blank">
+                                <div class="mr5"><img src="../../images/share_1_03.png" alt=""></div>
+                                <div class="flex-item">LinkedIn</div>
+                            </a>
                         </li>
                         <li class="footer-category__item--ul-li">
-                            <a class="footer-category__item--ul-li-a">Facebook</a>
+                            <a class="flex flex-item-center footer-category__item--ul-li-a" href="#" target="_blank">
+                                <div class="mr5"><img src="../../images/share_1_06.png" alt=""></div>
+                                <div class="flex-item">Facebook</div>
+                            </a>
                         </li>
                         <li class="footer-category__item--ul-li">
-                            <a class="footer-category__item--ul-li-a">Twitter</a>
+                            <a class="flex flex-item-center footer-category__item--ul-li-a" href="#" target="_blank">
+                                <div class="mr5"><img src="../../images/share_1_09.png" alt=""></div>
+                                <div class="flex-item">Twitter</div>
+                            </a>
                         </li>
                         <li class="footer-category__item--ul-li">
-                            <a class="footer-category__item--ul-li-a">Youtube</a>
+                            <a class="flex flex-item-center footer-category__item--ul-li-a" href="#" target="_blank">
+                                <div class="mr5"><img src="../../images/share_1_12.png" alt=""></div>
+                                <div class="flex-item">Youtube</div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -323,12 +292,12 @@
             <div class="footer-copyright">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="footer-copyright__text">©2019 Emperor Tech., Ltd. </div>
+                        <div class="footer-copyright__text">©2019 Emperor Technology Co., Ltd. </div>
                     </div>
                     <div class="col-lg-6 ">
                         <div class="footer-copyright__right">
                             <a class="footer-copyright__href" id="location">Location</a>
-                            <a class="footer-copyright__href">Legal Links</a>
+                            <a class="footer-copyright__href">Links</a>
                             <a class="footer-copyright__href">Legal</a>
                         </div>
                     </div>
@@ -341,12 +310,6 @@
     <script type="text/javascript" src="../../js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="../../js/wow.min.js"></script>
     <script type="text/javascript" src="../../js/main.js"></script>
-    <script>
-        $('.email-item').on('click', function(){
-            var email = $(this).data('email')
-            location="mailto:"+email+"?subject=test&cc=sample@hotmail.com&subject=主题&body=内容";
-        });
-    </script>
 </body>
 
 </html>
