@@ -140,9 +140,10 @@ $(document).ready(function(){
     })
 
 
-    $('.map-item').on('click', function(){
+    $('.map-item').hover(function(){
         var type = $(this).data('type')
         $('.map-image').attr('src', '../../images/'+type+'.jpg');
-    })
+    }, function(){})
+    
     
 })

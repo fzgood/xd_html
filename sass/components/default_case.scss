@@ -29,9 +29,19 @@
     text-align: center;
     background-color:#fff;
 }
-.case-main__item:nth-child(even) .case-main__item--box{
+
+.case-main__item--name{
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.case-main__item:nth-child(2n) .case-main__item--box,.case-main__item:nth-child(2n+1) .case-main__item--box{
     color:#ffffff;
     background-color: #3c3d3d;
+}
+.case-main__item:nth-child(4n) .case-main__item--box,.case-main__item:nth-child(4n+1) .case-main__item--box{
+    color:#3c3d3d;
+    background-color: #fff;
 }
 .case-main__item--box:hover{
     color:$mainColor !important;

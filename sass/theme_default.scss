@@ -300,22 +300,22 @@ body{
 	position: absolute;
 	top:50%;
 	left:20%;
-	transform: translate(40%,-60%);
-	transition:  all 0.8s ease;
-	opacity: 0;
+	transform: translate(0%,-60%);
+	// transition:  all 0.8s ease;
+	// opacity: 0;
 }
 .swiper-slide-active .banner-content{
-	transform: translateY(-60%);
-	opacity: 1;
+	// transform: translateY(-60%);
+	// opacity: 1;
 }
 .banner-content.two{
 	left:50%;
-	transform: translate(-20%, -50%);
-	opacity: 0;
+	transform: translate(-50%, -50%);
+	// opacity: 0;
 }
 .swiper-slide-active .banner-content.two{
-	transform: translate(-50%, -50%);
-	opacity: 1;
+	// transform: translate(-50%, -50%);
+	// opacity: 1;	
 }
 .banner-content{
 	color:#fff;
@@ -323,13 +323,24 @@ body{
 }
 .banner-content--title{
 	font-size: 48px;
+	transition:  all 0.8s ease ;
+	transform: translateX(10%);
+	opacity: 0;
 }
 .banner-content--intro{
 	margin-top: 30px;
 	font-size: 24px;
+	transition:  all 0.8s ease 0.3s;
+	transform: translateX(10%);
+	opacity: 0;
 }
 .banner-content.contact{
 	color: #6b6b6b;
+}
+
+.swiper-slide-active .banner-content .banner-content--title,.swiper-slide-active .banner-content .banner-content--intro{
+	transform: translateX(0%);
+	opacity: 1;
 }
 @include sm {
 	
@@ -391,4 +402,11 @@ body{
 .jjfa-page3-title{
 	font-size: 18px;
 }
+}
+
+.banner-fixed-main{
+	position: fixed;
+}
+.banner-fixed-hide{
+	opacity: 0;
 }
